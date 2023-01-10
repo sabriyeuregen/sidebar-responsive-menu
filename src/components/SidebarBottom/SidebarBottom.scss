@@ -1,0 +1,38 @@
+.sidebarbottom {
+  width: 80%;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+
+  &__colorbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    &-dark {
+      cursor: pointer;
+      margin-right: 15px;
+    }
+    &-night {
+      cursor: pointer;
+      margin-right: 15px;
+    }
+    &-light {
+      cursor: pointer;
+      margin-right: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+  .sidebarbottom {
+
+     &__colorbox {
+     flex-direction: column;
+     
+       &-light,&-night,&-dark {
+        margin-bottom: 10px;
+        margin-right: 0px;
+       }
+     }
+  }
+ }

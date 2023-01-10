@@ -1,0 +1,25 @@
+
+.sidebartop {
+    width: 80%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+    &__icon {
+     font-size: 24px; 
+     margin-right: 10px;
+     cursor: pointer;
+     padding-left: 10px;
+    }
+    &__brand {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 768px){
+   .sidebartop__brand {
+        display: none;
+    }
+  }
